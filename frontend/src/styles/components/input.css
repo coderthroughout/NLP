@@ -1,0 +1,134 @@
+/* src/styles/components/input.css */
+
+/* Input Section Container */
+.input-section {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Input Type Selector */
+.input-type-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.type-button {
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.type-button.active {
+  background: #2196f3;
+  color: white;
+  border-color: #2196f3;
+}
+
+/* Text Input Styles */
+.text-input textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* Voice Input Styles */
+.voice-input {
+  text-align: center;
+  padding: 20px;
+}
+
+.record-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #2196f3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.record-button.recording {
+  background: #f44336;
+  border-color: #f44336;
+}
+
+/* Image Input Styles */
+.image-input .dropzone {
+  border: 2px dashed #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.image-input .dropzone:hover {
+  border-color: #2196f3;
+}
+
+.file-input {
+  display: none;
+}
+
+.preview {
+  margin-top: 15px;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 4px;
+}
+
+/* Processing States */
+.processing-indicator {
+  text-align: center;
+  color: #757575;
+  margin: 10px 0;
+}
+
+/* Guidelines Section */
+.input-guidelines {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.input-guidelines ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.input-guidelines li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.input-guidelines li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2196f3;
+}
+
+/* Error Messages */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
